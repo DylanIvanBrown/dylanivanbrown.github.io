@@ -1,1 +1,36 @@
+title: Dylan Brown's Blog
+description: >-
+  A blog about software development, technology, and other interests.
+baseurl: ""
+url: "https://dylanivanbrown.github.io"
+
 theme: minima
+
+# Pagination
+paginate: 10
+paginate_path: "/blog/page:num/"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Build settings
+markdown: kramdown
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Dylan Brown"
