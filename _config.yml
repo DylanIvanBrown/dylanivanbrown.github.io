@@ -1,10 +1,17 @@
-title: Dylan Brown's Blog
+title: Debugging for Dopamine
+subtitle: Systematic Chaos
 description: >-
-  A blog about software development, technology, and other interests.
+  Navigating software development, life, and ADHD - one hyperfocus session at a time.
 baseurl: ""
 url: "https://dylanivanbrown.github.io"
 
 theme: minima
+
+# Header navigation order
+header_pages:
+  - index.md
+  - topics.md
+  - search.md
 
 # Pagination
 paginate: 10
@@ -19,6 +26,23 @@ plugins:
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+
+# Exclude from processing
+exclude:
+  - PRIVATE-REPO-SETUP.md
+  - QUICK-START.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+
+# Kramdown settings
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
 
 # Collections
 collections:

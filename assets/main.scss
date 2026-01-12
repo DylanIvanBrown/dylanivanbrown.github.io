@@ -1,0 +1,443 @@
+---
+# Only the main Sass file needs front matter (the dashes are required)
+---
+
+@import "minima";
+@import "syntax-highlighting";
+
+// Custom Dark Theme with Warm Orange Accents
+// Terminal-inspired but welcoming and professional
+
+// Color Palette
+$bg-primary: #0f0f0f;
+$bg-secondary: #1a1a1a;
+$bg-elevated: #242424;
+$text-primary: #e8e8e8;
+$text-secondary: #a0a0a0;
+$text-muted: #707070;
+$accent-primary: #ff9500;
+$accent-secondary: #fbbf24;
+$accent-hover: #ffb84d;
+$border-color: #333333;
+$code-bg: #1a1a1a;
+$link-color: #ff9500;
+$link-hover: #ffb84d;
+
+// Fonts - Monospace for headers, readable for body
+$mono-stack: 'JetBrains Mono', 'Fira Code', 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, monospace;
+$body-stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+// Base Styles
+body {
+  background-color: $bg-primary;
+  color: $text-primary;
+  font-family: $body-stack;
+  line-height: 1.7;
+}
+
+// Headers with terminal aesthetic
+h1, h2, h3, h4, h5, h6 {
+  color: $text-primary;
+  font-family: $mono-stack;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+
+  // Terminal-style prompt before headers
+  &::before {
+    content: "▸ ";
+    color: $accent-primary;
+    margin-right: 0.5em;
+  }
+}
+
+h1 {
+  font-size: 2.2em;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  font-size: 1.4em;
+  margin-top: 1.5em;
+}
+
+// Links
+a {
+  color: $link-color;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: $link-hover;
+    border-bottom-color: $link-hover;
+  }
+
+  &:visited {
+    color: #d97706;
+  }
+}
+
+// Site Header
+.site-header {
+  background-color: $bg-secondary;
+  border-top: 3px solid $accent-primary;
+  border-bottom: 1px solid $border-color;
+
+  .site-title {
+    font-family: $mono-stack;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: $text-primary;
+    letter-spacing: -0.03em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &:hover {
+      color: $accent-primary;
+      text-decoration: none;
+      border: none;
+    }
+
+    .site-subtitle {
+      font-size: 0.5em;
+      font-weight: 400;
+      color: $accent-secondary;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-top: 0.3em;
+      opacity: 0.9;
+    }
+  }
+
+  .site-nav {
+    .page-link {
+      color: $text-secondary;
+      font-family: $mono-stack;
+
+      &:hover {
+        color: $accent-primary;
+      }
+    }
+  }
+}
+
+// Main Content Wrapper
+.wrapper {
+  max-width: 900px;
+}
+
+.page-content {
+  background-color: $bg-primary;
+}
+
+// Post List
+.post-list {
+  list-style: none;
+  margin-left: 0;
+
+  > li {
+    margin-bottom: 2em;
+    padding: 1.5em;
+    background-color: $bg-secondary;
+    border-left: 3px solid $accent-primary;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: $bg-elevated;
+      transform: translateX(4px);
+    }
+  }
+
+  .post-link {
+    font-size: 1.5em;
+    font-family: $mono-stack;
+    color: $text-primary;
+    border: none;
+
+    &:hover {
+      color: $accent-primary;
+    }
+  }
+
+  .post-meta {
+    color: $text-muted;
+    font-family: $mono-stack;
+    font-size: 0.9em;
+
+    &::before {
+      content: "⟩ ";
+      color: $accent-secondary;
+    }
+  }
+}
+
+// Post Content
+.post-content {
+  h1::before,
+  h2::before,
+  h3::before,
+  h4::before {
+    content: "▸ ";
+    color: $accent-primary;
+    margin-right: 0.5em;
+  }
+
+  p {
+    margin-bottom: 1.2em;
+  }
+
+  ul, ol {
+    margin-left: 1.5em;
+    margin-bottom: 1.2em;
+
+    li {
+      margin-bottom: 0.5em;
+      color: $text-primary;
+
+      &::marker {
+        color: $accent-secondary;
+      }
+    }
+  }
+
+  img {
+    border-radius: 4px;
+    border: 1px solid $border-color;
+  }
+
+  blockquote {
+    border-left: 4px solid $accent-primary;
+    background-color: $bg-secondary;
+    padding: 1em 1.5em;
+    margin: 1.5em 0;
+    font-style: italic;
+    color: $text-secondary;
+  }
+}
+
+// Post Header
+.post-header {
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+  border-bottom: 2px solid $border-color;
+
+  .post-title {
+    font-size: 2.5em;
+    font-family: $mono-stack;
+    color: $text-primary;
+
+    &::before {
+      content: "▸ ";
+      color: $accent-primary;
+    }
+  }
+
+  .post-meta {
+    color: $text-muted;
+    font-family: $mono-stack;
+
+    &::before {
+      content: "⟩ ";
+      color: $accent-secondary;
+    }
+  }
+}
+
+// Code Blocks
+code {
+  background-color: $code-bg;
+  color: $accent-secondary;
+  font-family: $mono-stack;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-size: 0.9em;
+  border: 1px solid $border-color;
+}
+
+pre {
+  background-color: $code-bg;
+  border: 1px solid $border-color;
+  border-left: 3px solid $accent-primary;
+  padding: 1em;
+  border-radius: 4px;
+  overflow-x: auto;
+
+  code {
+    background: none;
+    border: none;
+    padding: 0;
+    color: $text-primary;
+  }
+}
+
+// Footer
+.site-footer {
+  background-color: $bg-secondary;
+  border-top: 1px solid $border-color;
+  color: $text-muted;
+  padding: 2em 0;
+
+  a {
+    color: $text-secondary;
+
+    &:hover {
+      color: $accent-primary;
+    }
+  }
+
+  .footer-heading {
+    font-family: $mono-stack;
+    color: $text-secondary;
+  }
+
+  .footer-col-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-text {
+    font-family: $mono-stack;
+    color: $text-secondary;
+    text-align: center;
+    margin: 0;
+    font-size: 0.9em;
+
+    .footer-divider {
+      color: $accent-primary;
+      margin: 0 0.5em;
+    }
+
+    .footer-joke {
+      color: $text-muted;
+      font-style: italic;
+    }
+  }
+}
+
+// Search Box (if you add search)
+#search-input {
+  background-color: $bg-secondary;
+  border: 1px solid $border-color;
+  color: $text-primary;
+  padding: 0.8em;
+  font-family: $mono-stack;
+  border-radius: 4px;
+
+  &:focus {
+    outline: none;
+    border-color: $accent-primary;
+    box-shadow: 0 0 0 2px rgba(255, 149, 0, 0.2);
+  }
+}
+
+#results-container {
+  li {
+    background-color: $bg-secondary;
+    border-left: 2px solid $accent-primary;
+
+    &:hover {
+      background-color: $bg-elevated;
+    }
+
+    a {
+      color: $text-primary;
+
+      &:hover {
+        color: $accent-primary;
+      }
+    }
+  }
+}
+
+// Archive Pages (Categories/Tags)
+.archive-group {
+  margin-bottom: 3em;
+
+  h2 {
+    font-family: $mono-stack;
+    color: $text-primary;
+    border-bottom: 2px solid $accent-primary;
+    padding-bottom: 0.5em;
+  }
+
+  .archive-item {
+    padding: 1em;
+    margin: 0.5em 0;
+    background-color: $bg-secondary;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: $bg-elevated;
+      transform: translateX(4px);
+    }
+
+    h4 {
+      margin: 0;
+      font-size: 1.2em;
+
+      a {
+        color: $text-primary;
+        border: none;
+
+        &:hover {
+          color: $accent-primary;
+        }
+      }
+    }
+
+    .post-meta {
+      color: $text-muted;
+      font-family: $mono-stack;
+      font-size: 0.85em;
+    }
+  }
+}
+
+// Selection
+::selection {
+  background-color: $accent-primary;
+  color: $bg-primary;
+}
+
+::-moz-selection {
+  background-color: $accent-primary;
+  color: $bg-primary;
+}
+
+// Scrollbar (Webkit)
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: $bg-primary;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $border-color;
+  border-radius: 6px;
+
+  &:hover {
+    background: $accent-primary;
+  }
+}
+
+// Responsive
+@media screen and (max-width: 800px) {
+  h1 { font-size: 1.8em; }
+  h2 { font-size: 1.5em; }
+  h3 { font-size: 1.2em; }
+
+  .post-header .post-title {
+    font-size: 2em;
+  }
+}
