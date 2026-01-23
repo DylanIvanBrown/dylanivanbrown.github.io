@@ -8,20 +8,24 @@
 // Custom Dark Theme with Warm Orange Accents
 // Terminal-inspired but welcoming and professional
 
-// Color Palette
-$bg-primary: #0f0f0f;
-$bg-secondary: #1a1a1a;
-$bg-elevated: #242424;
-$text-primary: #e8e8e8;
-$text-secondary: #a0a0a0;
-$text-muted: #707070;
-$accent-primary: #ff9500;
-$accent-secondary: #fbbf24;
-$accent-hover: #ffb84d;
-$border-color: #333333;
-$code-bg: #1a1a1a;
-$link-color: #ff9500;
-$link-hover: #ffb84d;
+// Color Palette - Softer, more appealing
+$bg-primary: #1a1a1a;
+$bg-secondary: #212121;
+$bg-elevated: #2a2a2a;
+$bg-card: #252525;
+$text-primary: #d4d4d4;
+$text-secondary: #9ca3af;
+$text-muted: #6b7280;
+$accent-primary: #f59e0b;      // Softer orange
+$accent-secondary: #fbbf24;    // Warm amber
+$accent-tertiary: #8b5cf6;     // Purple complement
+$accent-blue: #60a5fa;         // Cool blue
+$accent-hover: #fbbf24;
+$border-color: #374151;
+$border-accent: #3f3f46;
+$code-bg: #1e1e1e;
+$link-color: #f59e0b;
+$link-hover: #fbbf24;
 
 // Fonts - Monospace for headers, readable for body
 $mono-stack: 'JetBrains Mono', 'Fira Code', 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, monospace;
@@ -32,7 +36,10 @@ body {
   background-color: $bg-primary;
   color: $text-primary;
   font-family: $body-stack;
-  line-height: 1.7;
+  line-height: 1.8;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 // Headers with terminal aesthetic
@@ -44,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
 
   // Terminal-style prompt before headers
   &::before {
-    content: "▸ ";
+    content: "\25B8\0020";
     color: $accent-primary;
     margin-right: 0.5em;
   }
@@ -85,9 +92,10 @@ a {
 
 // Site Header
 .site-header {
-  background-color: $bg-secondary;
+  background: linear-gradient(135deg, $bg-secondary 0%, #252525 100%);
   border-top: 3px solid $accent-primary;
   border-bottom: 1px solid $border-color;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 
   .site-title {
     font-family: $mono-stack;
@@ -131,10 +139,13 @@ a {
 // Main Content Wrapper
 .wrapper {
   max-width: 900px;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 .page-content {
   background-color: $bg-primary;
+  padding: 2em 0;
 }
 
 // Post List
@@ -144,23 +155,42 @@ a {
 
   > li {
     margin-bottom: 2em;
-    padding: 1.5em;
-    background-color: $bg-secondary;
-    border-left: 3px solid $accent-primary;
-    border-radius: 4px;
-    transition: all 0.2s ease;
+    padding: 2em;
+    background: linear-gradient(135deg, $bg-card 0%, $bg-secondary 100%);
+    border-left: 4px solid $accent-primary;
+    border-radius: 8px;
+    border: 1px solid $border-accent;
+    border-left: 4px solid $accent-primary;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: linear-gradient(180deg, $accent-primary 0%, $accent-tertiary 100%);
+    }
 
     &:hover {
-      background-color: $bg-elevated;
-      transform: translateX(4px);
+      background: linear-gradient(135deg, $bg-elevated 0%, $bg-card 100%);
+      transform: translateX(8px) translateY(-2px);
+      box-shadow: 0 4px 16px rgba(245, 158, 11, 0.15);
+      border-color: $accent-primary;
     }
   }
 
   .post-link {
-    font-size: 1.5em;
+    font-size: 1.6em;
     font-family: $mono-stack;
     color: $text-primary;
     border: none;
+    display: inline-block;
+    margin-bottom: 0.5em;
 
     &:hover {
       color: $accent-primary;
@@ -171,36 +201,60 @@ a {
     color: $text-muted;
     font-family: $mono-stack;
     font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
 
     &::before {
-      content: "⟩ ";
-      color: $accent-secondary;
+      content: "\276F";
+      color: $accent-blue;
+      font-weight: bold;
     }
   }
 }
 
 // Post Content
 .post-content {
+  max-width: 750px;
+
   h1::before,
   h2::before,
   h3::before,
   h4::before {
-    content: "▸ ";
+    content: "\25B8\0020";
     color: $accent-primary;
     margin-right: 0.5em;
   }
 
+  h2 {
+    position: relative;
+    padding-bottom: 0.5em;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, $accent-primary 0%, $accent-tertiary 100%);
+      border-radius: 2px;
+    }
+  }
+
   p {
-    margin-bottom: 1.2em;
+    margin-bottom: 1.5em;
+    line-height: 1.9;
   }
 
   ul, ol {
     margin-left: 1.5em;
-    margin-bottom: 1.2em;
+    margin-bottom: 1.5em;
 
     li {
-      margin-bottom: 0.5em;
+      margin-bottom: 0.8em;
       color: $text-primary;
+      line-height: 1.8;
 
       &::marker {
         color: $accent-secondary;
@@ -209,17 +263,33 @@ a {
   }
 
   img {
-    border-radius: 4px;
+    border-radius: 8px;
     border: 1px solid $border-color;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    margin: 2em 0;
   }
 
   blockquote {
     border-left: 4px solid $accent-primary;
-    background-color: $bg-secondary;
-    padding: 1em 1.5em;
-    margin: 1.5em 0;
+    background: linear-gradient(135deg, $bg-secondary 0%, $bg-card 100%);
+    padding: 1.5em 2em;
+    margin: 2em 0;
     font-style: italic;
     color: $text-secondary;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+
+    &::before {
+      content: "\201C";
+      position: absolute;
+      top: 0.2em;
+      left: 0.3em;
+      font-size: 3em;
+      color: $accent-tertiary;
+      opacity: 0.2;
+      font-family: Georgia, serif;
+    }
   }
 }
 
@@ -235,7 +305,7 @@ a {
     color: $text-primary;
 
     &::before {
-      content: "▸ ";
+      content: "\25B8\0020";
       color: $accent-primary;
     }
   }
@@ -245,7 +315,7 @@ a {
     font-family: $mono-stack;
 
     &::before {
-      content: "⟩ ";
+      content: "\276F\0020";
       color: $accent-secondary;
     }
   }
@@ -256,25 +326,40 @@ code {
   background-color: $code-bg;
   color: $accent-secondary;
   font-family: $mono-stack;
-  padding: 0.2em 0.4em;
-  border-radius: 3px;
+  padding: 0.3em 0.5em;
+  border-radius: 4px;
   font-size: 0.9em;
-  border: 1px solid $border-color;
+  border: 1px solid $border-accent;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 pre {
-  background-color: $code-bg;
-  border: 1px solid $border-color;
-  border-left: 3px solid $accent-primary;
-  padding: 1em;
-  border-radius: 4px;
+  background: linear-gradient(135deg, $code-bg 0%, #1a1a1a 100%);
+  border: 1px solid $border-accent;
+  border-left: 4px solid $accent-primary;
+  padding: 1.5em;
+  border-radius: 8px;
   overflow-x: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  position: relative;
+  margin: 2em 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, $accent-primary 0%, $accent-blue 100%);
+  }
 
   code {
     background: none;
     border: none;
     padding: 0;
     color: $text-primary;
+    box-shadow: none;
   }
 }
 
@@ -361,27 +446,44 @@ pre {
 .archive-group {
   margin-bottom: 3em;
 
-  h2 {
+  h2, h3 {
     font-family: $mono-stack;
     color: $text-primary;
-    border-bottom: 2px solid $accent-primary;
-    padding-bottom: 0.5em;
+    padding-bottom: 0.8em;
+    margin-bottom: 1.5em;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 80px;
+      height: 3px;
+      background: linear-gradient(90deg, $accent-primary 0%, $accent-tertiary 100%);
+      border-radius: 2px;
+    }
   }
 
   .archive-item {
-    padding: 1em;
-    margin: 0.5em 0;
-    background-color: $bg-secondary;
-    border-radius: 4px;
-    transition: all 0.2s ease;
+    padding: 1.5em;
+    margin: 1em 0;
+    background: linear-gradient(135deg, $bg-card 0%, $bg-secondary 100%);
+    border-radius: 6px;
+    border: 1px solid $border-accent;
+    border-left: 3px solid $accent-secondary;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
 
     &:hover {
-      background-color: $bg-elevated;
-      transform: translateX(4px);
+      background: linear-gradient(135deg, $bg-elevated 0%, $bg-card 100%);
+      transform: translateX(6px);
+      box-shadow: 0 3px 10px rgba(245, 158, 11, 0.1);
+      border-left-color: $accent-primary;
     }
 
     h4 {
-      margin: 0;
+      margin: 0 0 0.5em 0;
       font-size: 1.2em;
 
       a {
@@ -391,6 +493,12 @@ pre {
         &:hover {
           color: $accent-primary;
         }
+      }
+
+      &::before {
+        content: "\25B8\0020";
+        color: $accent-blue;
+        font-size: 0.8em;
       }
     }
 
