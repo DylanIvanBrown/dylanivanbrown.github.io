@@ -385,13 +385,37 @@ pre {
 
   .footer-col-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .footer-col {
+    &.footer-col-left {
+      flex: 1;
+      text-align: left;
+    }
+
+    &.footer-col-right {
+      text-align: right;
+
+      .footer-link {
+        color: $text-secondary;
+        border: none;
+        font-size: 0.9em;
+        transition: all 0.2s ease;
+
+        &:hover {
+          color: $accent-primary;
+          text-decoration: underline;
+        }
+      }
+    }
   }
 
   .footer-text {
     font-family: $mono-stack;
     color: $text-secondary;
-    text-align: center;
     margin: 0;
     font-size: 0.9em;
 
@@ -403,6 +427,21 @@ pre {
     .footer-joke {
       color: $text-muted;
       font-style: italic;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .footer-col-wrapper {
+      flex-direction: column;
+      gap: 1em;
+    }
+
+    .footer-col {
+      &.footer-col-left,
+      &.footer-col-right {
+        text-align: center;
+        width: 100%;
+      }
     }
   }
 }
