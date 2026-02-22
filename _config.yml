@@ -2,8 +2,17 @@ title: Debugging Dopamine
 subtitle: Systems and Chaos
 description: >-
   Navigating software development, life, and ADHD - one hyperfocus session at a time.
+  Engineering best practices, technical leadership insights, and honest reflections from
+  a software engineer with 10+ years experience.
 baseurl: ""
 url: "https://dylanivanbrown.github.io"
+
+# SEO
+author:
+  name: Dylan Brown
+
+twitter:
+  card: summary
 
 theme: minima
 

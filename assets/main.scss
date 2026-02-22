@@ -190,11 +190,25 @@ a {
     color: $text-primary;
     border: none;
     display: inline-block;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.3em;
 
     &:hover {
       color: $accent-primary;
     }
+  }
+
+  .post-subtitle-preview {
+    font-size: 1.1em;
+    color: $accent-secondary;
+    font-style: italic;
+    margin: 0.3em 0 0.8em 0;
+    line-height: 1.4;
+  }
+
+  .post-excerpt {
+    color: $text-secondary;
+    margin: 0.8em 0 0.5em 0;
+    line-height: 1.6;
   }
 
   .post-meta {
@@ -303,11 +317,24 @@ a {
     font-size: 2.5em;
     font-family: $mono-stack;
     color: $text-primary;
+    margin-bottom: 0.3em;
 
     &::before {
       content: "\25B8\0020";
       color: $accent-primary;
     }
+  }
+
+  .post-subtitle {
+    font-size: 1.3em;
+    font-family: $body-stack;
+    color: $text-secondary;
+    font-weight: 400;
+    font-style: italic;
+    margin: 0.5em 0 1em 0;
+    line-height: 1.4;
+    padding-left: 1.5em;
+    border-left: 3px solid $accent-secondary;
   }
 
   .post-meta {
@@ -317,6 +344,17 @@ a {
     &::before {
       content: "\276F\0020";
       color: $accent-secondary;
+    }
+
+    .post-updated {
+      color: $accent-tertiary;
+      font-size: 0.95em;
+      font-style: italic;
+
+      &::before {
+        content: "\21BB\0020";
+        color: $accent-tertiary;
+      }
     }
   }
 }

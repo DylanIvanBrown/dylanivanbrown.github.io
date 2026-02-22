@@ -1,9 +1,11 @@
 ---
 layout: post
 title: "Welcome to My Blog"
+description: "Meet Dylan Brown: software engineer with 10+ years experience leading development teams, sharing thoughts on engineering, leadership, and navigating neurodivergent life."
+excerpt: "A space to share my thoughts and experiences as a person with ADHD who leads engineering teams and is always looking to learn more and share what I learn."
 date: 2026-01-11 12:00:00 -0000
 categories: [general]
-tags: [welcome]
+tags: [welcome, about, software-engineering, leadership, neurodivergent]
 ---
 
 # Hello, World!

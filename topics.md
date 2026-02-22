@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Topics
+description: "Browse all blog posts by category and tag - from software engineering principles to neurodivergent life, coding best practices to AI tools."
 permalink: /topics/
 ---
 
