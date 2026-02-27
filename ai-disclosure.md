@@ -1,7 +1,7 @@
 ---
 layout: page
 title: AI Disclosure
-description: "Transparency about how AI tools are used in creating and maintaining this blog - from writing assistance to code development."
+description: "Transparency about how AI tools are used in creating and maintaining this blog. This is not AI slop."
 permalink: /ai-disclosure/
 ---
 
