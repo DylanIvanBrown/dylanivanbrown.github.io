@@ -1,9 +1,10 @@
 ---
 layout: post
 title: "Spec-Driven Development"
+subtitle: "Why it might not be worth all the hype, or might not be right for you"
 description: "Why spec-driven development with AI coding assistants shifts responsibility, reduces learning, and removes the joy from engineering."
 excerpt: "Spec-driven development can be a great exercise in working with AI coding tools, but it robs the spec writer of critical details and most importantly the joy of building software."
-date: 2025-02-27 18:00:00 -0000
+date: 2026-02-27 18:00:00 -0000
 categories: [engineering]
 tags: [ai, coding-assistants, software-engineering, productivity, code-quality, learning, opinion]
 ---
