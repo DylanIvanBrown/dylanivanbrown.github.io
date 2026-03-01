@@ -4,7 +4,7 @@ title: "How I use AI in my writing"
 subtitle: "Or more importantly how I don't use AI"
 description: "An experience-based step-by-step guide on using AI tools to build momentum and clean up your writing, without losing your voice or generating AI slop"
 excerpt: "From transcribing my thoughts whilst washing dishes to a published post, here's how I use AI tools in my writing without generating AI slop."
-date: 2026-03-01 01:18:00 -0000
+date: 2026-02-28 22:18:00 -0000
 # updated: 2026-02-08 12:00:00 -0000  # Uncomment when updating existing posts
 categories: [meta]  # Choose: general, engineering, meta, personal, etc.
 tags: [ai, productivity, tutorial, learning]  # Choose 3-5 tags in kebab-case from /tags/ page
