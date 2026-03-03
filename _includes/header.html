@@ -4,10 +4,13 @@
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
-      {{ site.title | escape }}
-      {%- if site.subtitle -%}
-        <span class="site-subtitle">{{ site.subtitle | escape }}</span>
-      {%- endif -%}
+      <img src="{{ "/assets/images/dd-logo.png" | relative_url }}" alt="{{ site.title | escape }} logo" class="site-logo" />
+      <span class="site-title-text">
+        {{ site.title | escape }}
+        {%- if site.subtitle -%}
+          <span class="site-subtitle">{{ site.subtitle | escape }}</span>
+        {%- endif -%}
+      </span>
     </a>
 
     {%- if page_paths -%}
