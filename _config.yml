@@ -16,11 +16,15 @@ twitter:
 
 theme: minima
 
+minima:
+  date_format: "%b %-d, %Y"
+
 # Header navigation order
 header_pages:
   - index.md
   - topics.md
   - search.md
+  - subscribe.md
 
 # Pagination
 paginate: 10
