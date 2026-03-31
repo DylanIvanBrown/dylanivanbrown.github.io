@@ -4,7 +4,7 @@ title: "The boy(s) who cried AGI"
 subtitle: "My frustration with the current AI discourse and why it could be bad for the future of AI"
 description: "The AI discourse has collapsed to mean only LLMs and generative AI. As someone drawn to ML research over 10 years ago, I think this could be bad for the future of AI."
 excerpt: "The word \"AI\" has been quietly redefined to mean only LLMs and generative AI. I find this narrowing of our imagination genuinely concerning for the future of research and innovation in the ML field."
-date: 2026-03-31 08:00:00 -0000
+date: 2026-03-31 00:00:00 -0000
 # updated: 2026-03-22 18:00:00 -0000
 categories: [engineering]
 tags: [ai, software-engineering, machine-learning, opinion]
@@ -22,7 +22,7 @@ As somebody who was drawn to AI and ML research over 10 years ago, before the ad
 
 It's understandable that as humans we see the way in which LLM are able to generate text that approximates natural language and see that as the peak of artificial intelligence.
 
-It's no accident that we are like that, as we have learnt to interpret the ways in which people wield their words as a signifier of their intelligence, but for LLMs the construction of language is not an indicator of actual intelligence, instead we are often fooled by it.
+It's no accident that we are like that, as we have learnt to interpret the ways in which people wield their words as a signifier of their intelligence, but for LLMs the construction of language is [not an indicator of actual intelligence](https://www.nature.com/articles/s42256-025-01113-8), instead we are often fooled by it.
 
 So much of what is making these LLM models powerful at the moment is the complex engineering and tooling around these models. The LLM alone cannot do what Claude Code, OpenCode, or Gemini can do.
 
