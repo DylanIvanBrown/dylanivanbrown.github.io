@@ -12,9 +12,11 @@ tags: [software-engineering, engineering-design, leadership, opinion, case-study
 
 ## The Fortnite Story
 
-The Fortnite you know today is not how Fortnite started off. The original game was built around the "Save the Day" game mode, which was following on from the trend of co-operative survival games.
+The Fortnite you know today is not how Fortnite started off. The original game was built around the "Save the World" game mode, which was following on from the trend of co-operative survival games.
 
 Recently the [news](https://www.fortnite.com/news/fortnite-save-the-world-goes-free-to-play-april-16) that this game mode was going to be made free to play, it's previously been behind a fee as per the original model of Fortnite, reminded me of what we can learn from Fortnite's successful pivot.
+
+![Fortnite Save the world logo, updated by a Reddit user](../assets/images/posts/2026-04-12-what-we-can-learn-from-fortnite/logo-reddit-user.png)
 
 Before Fortnite's battle royale game mode, the one you probably know, there were other battle royale games that were making waves in the gaming industry. Around that time I was playing PlayerUnknown’s Battlegrounds, more commonly known as PUBG. PUBG was a gritty and realistic battle royale game that quickly became one of the world's most popular PC games.
 
