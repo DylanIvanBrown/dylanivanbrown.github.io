@@ -10,6 +10,16 @@ url: "https://dylanivanbrown.github.io"
 # SEO
 author:
   name: Dylan Brown
+  linkedin: dylanivanbrown
+
+linkedin:
+  url: "https://www.linkedin.com/in/dylanivanbrown/"
+
+# Structured data (sameAs) for jekyll-seo-tag
+social:
+  name: Dylan Brown
+  links:
+    - https://www.linkedin.com/in/dylanivanbrown/
 
 twitter:
   card: summary
@@ -22,6 +32,7 @@ minima:
 # Header navigation order
 header_pages:
   - index.md
+  - about.md
   - topics.md
   - search.md
   - subscribe.md
