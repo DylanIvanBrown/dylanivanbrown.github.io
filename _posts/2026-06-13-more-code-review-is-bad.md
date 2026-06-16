@@ -105,18 +105,3 @@ I have learnt through myself, that __what is stimulating is what is motivating__
 ## So now what?
 
 The takeaway here is not to avoid using AI tools altogether, but to properly understand the pitfalls and traps that we can fall into, especially when chasing vanity metrics. It's also critically important to not just understand these tools, but understand ourselves and our colleagues as humans, with all of our biases and constraints. Understanding all of that will help you and your teams to make much more effective use of AI tools, but it probably won't 10x productivity - but that was never a realistic goal to begin with.
-
-## SEO Checklist
-
-Before publishing, ensure you've completed:
-
-- [ ] **Title** is descriptive and under 60 characters
-- [ ] **Description** added (155-160 chars, includes key searchable terms)
-- [ ] **Excerpt** added (1-2 sentences, captures key takeaway)
-- [ ] **3-5 relevant tags** selected from the tag reference at `/tags/`
-- [ ] All tags are in **kebab-case** format
-- [ ] Proper **heading structure** (use H2 `##` for main sections, H3 `###` for subsections)
-- [ ] At least **1 internal link** to another post (if applicable)
-- [ ] **Images have descriptive alt text** (if applicable)
-- [ ] Read through for **typos and clarity**
-- [ ] **Preview locally**: `bundle exec jekyll serve --drafts`
