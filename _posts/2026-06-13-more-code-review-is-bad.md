@@ -5,7 +5,7 @@ subtitle: "How generated code is degenerating our codebases"
 description: "AI generates code faster than we can review it. Why more code review degrades codebases, drains reviewer capacity, and how teams can do it well."
 excerpt: "AI tools generate code faster than humans can meaningfully review it. Here's why that degrades our codebases, and what engineering leaders and contributors can do about it."
 date: 2026-06-13 17:00:00 -0000
-# updated: 2026-02-08 12:00:00 -0000  # Uncomment when updating existing posts
+updated: 2026-06-16 16:00:00 -0000  # Uncomment when updating existing posts
 categories: [engineering]
 tags: [ai, coding-assistants, code-quality, engineering-management, opinion]
 ---
@@ -95,6 +95,12 @@ Linting for all languages is also an important tool. __Updating your linting che
 In these above ways the crux of what we are doing is trying to create ways to __protect our reviewing capacity__ by enforcing that these other details are reviewed and enforced as automatically as possible and feedback is given to the AI tooling to bring it in line with these guidelines.
 
 Another way that anybody creating with AI can improve the quality of their output, and better maintain their understanding of what is produced, is to __start the first draft yourself__. I've written before about why [letting AI lead from a spec](https://dylanivanbrown.github.io/blog/2026/02/27/spec-driven-development/) shifts too much away from you. This could mean writing some pseudocode or code with a lot of `TODO`s and mocks and letting that structure and approach be defined by you. Using an AI tool to then expand on that (fill in `TODO`s etc) means that understanding how it has gone from step 1, to step 10 is much less of a cognitive load as you had a better idea of where you thought it was going, and if it veers away from that then you might not be as biased against pushing back on that output.
+
+## Keep it fun
+
+One important aspect of this that I haven't yet covered, but is particularly important to me as a person with ADHD, is that code review isn't as fun as writing code. I've not met many engineers who find code reviews more fun than writing code, that's not what drew most of us to this kind of work.
+
+I have learnt through myself, that __what is stimulating is what is motivating__. A challenge I can problem solve my way through; getting stuck into the details of the task; learning new knowledge through deeper understanding and experience are aspects of software engineering that I find fun. It is important that we __protect the fun in our work__ if we want to create sustainable working environments for ourselves and our teams.
 
 ## So now what?
 
