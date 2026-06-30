@@ -44,7 +44,7 @@ For engineers, what we can learn from this is to build with more of an open mind
 
 Create the right abstractions that optimise for the future velocity of innovation as well as what you are building now. This will also improve your engineering design skills.
 
-For engineering leaders we should learn to not over-fit the engineering choices to one specific problem. Think about how what you are building could allow you to pivot on features or product when the opportunity arises. If you are building Fortnite you aren't going to pivot to an AI company, but the video game gameplay loop that wins out might not be the first one you build for. 
+For engineering leaders we should learn to not over-fit the engineering choices to one specific problem. Think about how what you are building could allow you to pivot on features or product when the opportunity arises. If you are building Fortnite you aren't going to pivot to an AI company, but the video game gameplay loop that wins out might not be the first one you build for.
 
 Focus on helping your team build the right tools and the right solutions that can be pivoted as the needs change and new opportunities arrive. Help your engineering teams to understand this idea.
 
