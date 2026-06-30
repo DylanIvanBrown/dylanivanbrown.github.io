@@ -4,7 +4,7 @@ title: "Why I like Rust as an Engineering Leader"
 subtitle: "And how it makes my job easier"
 description: "Rust's compiler shifts errors left, cuts cloud compute costs, and attracts engineers who value stability. Why I advocate for Rust as an engineering leader."
 excerpt: "So it's not that we should always use Rust, but I do think we should be building with Rust a lot more, and in a lot more ways. We should be expanding the vision for when we use Rust, as far more software would benefit from stability and sustainability"
-date: 2026-06-30 02:00:00 -0000
+date: 2026-06-30 00:00:00 -0000
 # updated: 2026-02-08 12:00:00 -0000  # Uncomment when updating existing posts
 categories: [engineering]
 tags: [software-engineering, technical-leadership, best-practices, opinion, rust]
