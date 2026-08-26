@@ -40,7 +40,7 @@ That doesn't mean you can rest on your laurels either. You still need to work on
 
 We should all know by now that social media is a trap.
 
-![Admiral Ackbar - "It's a trap"](../assets/images/posts/2026-08-25-dont-listen-to-the-loud-people/ackbar.webp)
+![Admiral Ackbar - "It's a trap"](/assets/images/posts/2026-08-25-dont-listen-to-the-loud-people/ackbar.webp)
 
 Unfortunately it's a very well built trap. Not just a trap for us as consumers, but also a trap for content creators. Posting takes time, the more a person is posting the less time they are likely taking to learn.
 
