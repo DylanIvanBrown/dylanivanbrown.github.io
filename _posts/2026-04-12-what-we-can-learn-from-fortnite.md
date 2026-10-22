@@ -40,7 +40,7 @@ This approach is all about being in the right position to pursue an opportunity 
 
 ## The lessons for software product teams
 
-For engineers, what we can learn from this is to build with more of an open mind to where the product might go. Only build inflexible foundations with rock solid assumptions, beyond that build software that you know will need to change, all software does, especially the successful software. 
+For engineers, what we can learn from this is to build with more of an open mind to where the product might go. Only build inflexible foundations with rock solid assumptions, beyond that build software that you know will need to change, all software does, especially the successful software.
 
 Create the right abstractions that optimise for the future velocity of innovation as well as what you are building now. This will also improve your engineering design skills.
 
